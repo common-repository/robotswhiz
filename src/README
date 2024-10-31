@@ -1,0 +1,39 @@
+-----------------  WordPress plugin Robots Meta Whiz  ------------------
+
+https://wordpress.org/plugins/robotswhiz
+https://github.com/maratbn/RobotsWhiz
+
+Copyright (C) 2015-2017  Marat Nepomnyashy  http://maratbn.com  maratbn@gmail
+
+Version: 1.3.0-development_unreleased
+
+The latest release is in the git branch 'master--release--1.2'.
+
+This software is normally installed from the WordPress admin dashboard.
+
+Licensed under GPL3.  See LICENSE.
+
+Overview:
+
+  At the time of this writing, the latest version of WordPress, version 4.7,
+  has functionality to discourage search engines from indexing the whole site,
+  but not functionality to discourage search engines from indexing only certain
+  specific pages and posts of the site.
+
+  Robots Meta Whiz is a WordPress plugin that allows site administrators to
+  deploy custom meta robots tags to discourage search engines from indexing,
+  following links from, caching, indexing images from, and / or have
+  additional custom restrictions on only for certain specifically-designated
+  pages and posts.
+
+  It is an easy way to discourage search engines from indexing only specific
+  pages / posts.
+
+  This only applies to search engine robots, and will not effect the site's
+  local search functionality.
+
+Technical summary:
+
+  Plugin works by hooking-in special logic into the action 'wp_head' to inject
+  the tag <meta name='robots' content='...'> with restriction directives for
+  the specified pages and posts.
